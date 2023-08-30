@@ -39,6 +39,15 @@ body{
     font-family: "Oswald", Helvetica, sans-serif;
     color: #FFF;
 }
+textarea,
+input.text,
+input[type="text"],
+input[type="button"],
+input[type="submit"],
+.input-checkbox {
+-webkit-appearance: none;
+border-radius: 0;
+}
 .header__nav-link{
     font-size: 12px;
     font-weight: bold;
@@ -466,8 +475,7 @@ form input[type="text"]:focus{
     font-size: 25px;
     padding: 10px 20px;
     margin-left: -5px;
-    -webkit-appearance: none;
-    border-radius: 0px;
+
 }
 @media(max-width: 780px){
     .subscribe__input-text {
