@@ -1,0 +1,2 @@
+font: Oswald - bold, extrabold, italic, regular; 
+font: Montserrat - regular; 
