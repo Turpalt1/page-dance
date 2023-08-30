@@ -465,7 +465,11 @@ form input[type="text"]:focus{
     padding: 10px 20px;
     margin-left: -5px;
 }
-
+@media(max-width: 780px){
+    .subscribe__input-text {
+        width: auto;
+    }
+}
 /*  */
 footer{
     background-color: #2c2c2c;
@@ -479,6 +483,7 @@ footer{
     display: flex;
     justify-content: space-between;
     column-gap: 12px;
+    flex-wrap: wrap;
 }
 .footer__block {
     flex: 1;
