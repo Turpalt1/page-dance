@@ -38,6 +38,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 body{
     font-family: "Oswald", Helvetica, sans-serif;
     color: #FFF;
+   
 }
 textarea,
 input.text,
@@ -110,7 +111,7 @@ ul li:last-child{
     padding: 10px 5px;
     border-radius: 20px;
 }
-form input[type="text"]:focus{
+.header__form input[type="text"]:focus{
    border: 1px solid #fff;
 }
 .header__menu{
@@ -176,6 +177,9 @@ form input[type="text"]:focus{
         opacity: 1;
         visibility: visible;
     }
+    .header__form{
+        display: none;
+    }
 }
 /*  */
 .titlehere{
@@ -202,6 +206,11 @@ form input[type="text"]:focus{
     color: #fff;
     padding: 18px 70px;
     background-color: #e8631c;
+}
+@media(max-width:780px){
+    .titlehere__container {
+        margin: 0px;
+    }
 }
 
 /*  */
@@ -234,10 +243,11 @@ form input[type="text"]:focus{
 }
 
 .dance__block-img {
+    width: 100%;
 }
 .dance__block-text{
     background: #2c2c2c;
-    width: 372px;
+    max-width: 372px;
     text-align: center;
     padding: 20px 10px;
 }
@@ -357,6 +367,9 @@ form input[type="text"]:focus{
 
 }
 @media(max-width:780px){
+    .dances__amazing{
+        display: block;
+    }
     .dances__amazing-blimg {
         display: none;
     }
@@ -422,7 +435,6 @@ form input[type="text"]:focus{
 .herbert {
     background: url(../image/bg/datenew.png) no-repeat;
     background-size: cover;
-    position: relative;
     padding: 330px 0px;
 }
 
@@ -439,6 +451,14 @@ form input[type="text"]:focus{
 .herbert__author {
     font-size: 58px;
     font-weight: bold;
+}
+@media(max-width: 780px){
+    .herbert__text {
+        font-size: 40px;
+    }
+    .herbert__author {
+        font-size: 48px;
+    }
 }
 
 /*  */
